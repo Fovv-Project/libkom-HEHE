@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import Login from './mhs_pages/login';
-import LandingHome from './mhs_pages/landingHome';
-import MhsProfile from './mhs_pages/mhsProfile';
-import ScanLoading from './mhs_pages/scanLoading';
-import Scanning from './mhs_pages/scanning';
-import Dashboard from './admin_pages/dashboard';
-import AbsenList from './admin_pages/absenList';
+import LandingHome from './pages/mhs_pages/landingHome';
+import MhsProfile from './pages/mhs_pages/mhsProfile';
+import ScanLoading from './pages/mhs_pages/scanLoading';
+import Scanning from './pages/mhs_pages/scanning';
+import Dashboard from './pages/admin_pages/dashboard';
+import AbsenList from './pages/admin_pages/absenList';
+import Login from './pages/mhs_pages/login';
 
 function App() {
   return (
