@@ -1,8 +1,13 @@
-import { createContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
+import { useNavigate, Navigate } from 'react-router-dom';
+import { Skeleton } from 'antd';
 import { USER, SERVER_USER } from './const.js';
 import { auth, firebaseAuth } from '../firebase_service/authentication/auth.js';
+import { getUser } from '../services/userServices.js';
+import { useRole } from '../hooks/useRole.js';
+import NotFoundError from '../exceptions/NotFoundError.js';
 
-export const UserContext = createContext({
+const UserContext = createContext({
   firebaseUser: auth.currentUser,
   localFirebaseUser: auth.currentUser,
   serverUser: null,
@@ -38,7 +43,16 @@ export const withFirebase = (Component) => (props) => {
           localStorage.setItem(USER, JSON.stringify(firebaseUser));
           setLocalFirebaseUser(firebaseUser);
           setFirebaseUser(firebaseUser);
-          setServerUser(firebaseUser);
+          // setServerUser(firebaseUser);
+
+          firebaseUser
+            .getIdToken()
+            .then((token) => getUser(token, firebaseUser.email))
+            .then((response) => response.json())
+            .then((json) => setServerUser(json.data))
+            .catch((err) => {
+              if (err instanceof NotFoundError) setServerUser(null);
+            });
         },
         (err) => {
           signOutHandler();
@@ -68,3 +82,30 @@ export const withFirebase = (Component) => (props) => {
     </UserContext.Provider>
   );
 };
+
+export const withAuthenticated = (Component) => (props) => {
+  const navigate = useNavigate();
+  const { firebaseUser, localFirebaseUser } = useContext(UserContext);
+  useEffect(() => {
+    if (!firebaseUser && !localFirebaseUser) {
+      navigate('/login');
+    }
+  });
+  return firebaseUser ? <Component {...props} /> : <Skeleton active />;
+};
+
+export const withAuthorized = (condition) => (Component) => (props) => {
+  const { firebaseUser } = useContext(UserContext);
+  const { loading, role } = useRole(firebaseUser);
+  return !loading ? (
+    condition(role) ? (
+      <Component {...props} />
+    ) : (
+      <Navigate to="/login" />
+    )
+  ) : (
+    <Skeleton active />
+  );
+};
+
+export default UserContext;
