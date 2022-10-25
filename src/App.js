@@ -5,14 +5,13 @@ import {
 } from 'react-router-dom';
 import './styles/baseStyles.js';
 import { GlobalStyle } from "./styles/baseStyles.js";
-import { Route, Routes } from 'react-router-dom';
 import LandingHome from './pages/mahasiswa/LandingHome';
 import ScanLoading from './pages/mahasiswa/ScanLoading';
 import Scanning from './pages/mahasiswa/Scanning';
 import Dashboard from './pages/admin/Dashboard';
 import AbsenList from './pages/admin/AbsenList';
-import Login from './pages/mahasiswa/Login';
 import Profile from './pages/mahasiswa/Profile';
+import Login from './pages/login/Login'
 
 
 const App = () => {
