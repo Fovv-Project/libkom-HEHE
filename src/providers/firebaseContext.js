@@ -1,10 +1,10 @@
 import { createContext, useContext, useEffect, useState } from 'react';
 import { useNavigate, Navigate } from 'react-router-dom';
-import { Skeleton } from 'antd';
 import { USER, SERVER_USER } from './const.js';
 import { auth, firebaseAuth } from '../firebase_service/authentication/auth.js';
 import { getUser } from '../services/userServices.js';
 import { useRole } from '../hooks/useRole.js';
+import Skeleton from 'react-loading-skeleton';
 import NotFoundError from '../exceptions/NotFoundError.js';
 
 const UserContext = createContext({
@@ -90,7 +90,7 @@ export const withAuthenticated = (Component) => (props) => {
       navigate('/');
     }
   });
-  return firebaseUser ? <Component {...props} /> : <Skeleton active />;
+  return firebaseUser ? <Component {...props} /> : <Skeleton />;
 };
 
 export const withAuthorized = (condition) => (Component) => (props) => {
@@ -103,7 +103,7 @@ export const withAuthorized = (condition) => (Component) => (props) => {
       <Navigate to="/login" />
     )
   ) : (
-    <Skeleton active />
+    <Skeleton />
   );
 };
 
