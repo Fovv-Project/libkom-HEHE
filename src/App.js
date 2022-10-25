@@ -1,13 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import LandingHome from './pages/mhs_pages/landingHome';
-import MhsProfile from './pages/mhs_pages/mhsProfile';
-import ScanLoading from './pages/mhs_pages/scanLoading';
-import Scanning from './pages/mhs_pages/scanning';
-import Dashboard from './pages/admin_pages/dashboard';
-import AbsenList from './pages/admin_pages/absenList';
-import Login from './pages/mhs_pages/login';
+import LandingHome from './pages/mahasiswa/LandingHome';
+import ScanLoading from './pages/mahasiswa/ScanLoading';
+import Scanning from './pages/mahasiswa/Scanning';
+import Dashboard from './pages/admin/Dashboard';
+import AbsenList from './pages/admin/AbsenList';
+import Login from './pages/mahasiswa/Login';
+import Profile from './pages/mahasiswa/Profile';
 
 function App() {
   return (
@@ -15,14 +13,12 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingHome />}  />
         <Route path='/login' element={<Login />}  />
-        <Route path='/mhsProfile' element={<MhsProfile />}  />
+        <Route path='/profile' element={<Profile />}  />
         <Route path='/scanning' element={<Scanning />}  />
-        <Route path='/scanLoad' element={<ScanLoading />}  />
+        <Route path='/scanload' element={<ScanLoading />}  />
         <Route path='/dashboard' element={<Dashboard />}  />
-        <Route path='/absenList' element={<AbsenList />}  />
+        <Route path='/absenlist' element={<AbsenList />}  />
       </Routes>
-
-      {/* <LandingHome /> */}
     </div>
   );
 }

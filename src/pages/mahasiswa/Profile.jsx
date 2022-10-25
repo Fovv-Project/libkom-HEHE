@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MhsProfile = () => {
+const Profile = () => {
     return (
         <div>
             ini halaman profile ya gais
@@ -8,4 +8,4 @@ const MhsProfile = () => {
     );
 }
 
-export default MhsProfile;
+export default Profile;
