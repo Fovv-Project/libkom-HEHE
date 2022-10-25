@@ -1,21 +1,22 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import logo1 from "../../assets/logo1.png";
-import image1 from "../../assets/image1.png";
-import { LoginWrapper, LoginBox, LogoImage, LogoLib, LoginButton } from './Login.styled.js'
+import { LoginWrapper } from './Login.style.js'
+import { logo, ilustration } from "../../assets";
 
 
-const Login = () => (
-  <LoginWrapper>
-    <LoginBox>
-      <LogoLib src={logo1} />
-      <LogoImage src={image1} />
-      <LoginButton type="button">
-        <Link to="/profile">Login via Safana</Link>
-      </LoginButton>
-    </LoginBox>
-  </LoginWrapper>
+const Login = () => {
+  return (
+    <LoginWrapper>
+      <div className="login-box">
+        <img alt="LogoLib" className="logo-lib" src={logo} />
+        <img alt="Ilustration" className="ilustration" src={ilustration} />
+        <button className="login-button" type="button">
+          <Link to="/profile">Login via Safana</Link>
+        </button>
+      </ div>
+    </LoginWrapper>
+  )
 
-);
+};
 
 export default Login;

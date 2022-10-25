@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 // import { Profile } from "../profile/Profile";
-import fotoAkun from "../../assets/logo1.png";
-import { ProfileWrapper, ProfileAbsen, FotoProfile } from './Profile.styled.js'
+import fotoAkun from "../../assets/images/logo1.png";
+import { ProfileWrapper, ProfileAbsen, FotoProfile } from './Profile.style.js'
 
 const Profile = () => (
     <ProfileWrapper>
