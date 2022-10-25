@@ -43,7 +43,6 @@ export const withFirebase = (Component) => (props) => {
           localStorage.setItem(USER, JSON.stringify(firebaseUser));
           setLocalFirebaseUser(firebaseUser);
           setFirebaseUser(firebaseUser);
-          // setServerUser(firebaseUser);
 
           firebaseUser
             .getIdToken()
@@ -88,7 +87,7 @@ export const withAuthenticated = (Component) => (props) => {
   const { firebaseUser, localFirebaseUser } = useContext(UserContext);
   useEffect(() => {
     if (!firebaseUser && !localFirebaseUser) {
-      navigate('/login');
+      navigate('/');
     }
   });
   return firebaseUser ? <Component {...props} /> : <Skeleton active />;
