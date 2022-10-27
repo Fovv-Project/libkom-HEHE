@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     line-height: 1.6;
     color: #2A2A2A;
-    background-color: ${Colors.White};
+    background-color: ${Colors.Primary};
   }
 
   ul {

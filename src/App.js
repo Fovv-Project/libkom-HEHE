@@ -10,7 +10,7 @@ import ScanLoading from './pages/mahasiswa/ScanLoading';
 import Scanning from './pages/mahasiswa/Scanning';
 import Dashboard from './pages/admin/Dashboard';
 import AbsenList from './pages/admin/AbsenList';
-import Profile from './pages/mahasiswa/Profile';
+import Profile from './pages/mahasiswa/profile/Profile';
 import Login from './pages/login/Login'
 
 
