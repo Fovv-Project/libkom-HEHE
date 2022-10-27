@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Colors from "../../styles/colors";
+
 export const LoginWrapper = styled.section`
     background: linear-gradient(180deg, #FFF2DD 68.54%, #FFFFFF 100%);
+    height: 100vh;
     
     .login-box{
         padding-top: 5rem;
