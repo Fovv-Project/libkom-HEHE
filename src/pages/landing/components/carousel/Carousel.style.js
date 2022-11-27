@@ -2,16 +2,18 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
-  top: 100px;
+  height: 300px;
+  width: 80%;
+  margin: auto;
 
   @media (max-width: ${({ mobileBreakpoint }) => mobileBreakpoint}px) {
-    top: 30px;
+    width: inherit;
   }
 `;
 
 export const RailWrapper = styled.div`
   overflow: hidden;
-  margin: ${({ showDots }) => (showDots ? '0 20px 15px 20px' : 'auto')};
+  margin: ${({ showDots }) => (showDots ? '0 20px 15px 20px' : '0 auto')};
 
   @media (max-width: ${({ mobileBreakpoint }) => mobileBreakpoint}px) {
     overflow-x: auto;
@@ -35,7 +37,7 @@ export const Rail = styled.div`
     `translateX(calc(${-100 * currentPage}% - ${gap * currentPage}px))`};
 
   @media (max-width: ${({ mobileBreakpoint }) => mobileBreakpoint}px) {
-    padding-left: ${({ gap }) => `${gap}px`};
+    padding-left: ${({ gap }) => `${gap + 20}px`};
     grid-template-columns: ${({ page }) => `repeat(${page}, 90%)`};
     grid-column-gap: ${({ cols, rows, gap }) =>
       `calc(${(cols * rows - 1) * 90}% + ${cols * rows * gap}px)`};
@@ -58,9 +60,10 @@ export const ItemSet = styled.div`
     grid-template-columns: ${({ cols, rows }) =>
       `repeat(${cols * rows}, 100%)`};
     grid-template-rows: 1fr;
+
     &:last-of-type > ${Item}:last-of-type {
-      padding-right: ${({ gap }) => `${gap}px`};
-      margin-right: ${({ gap }) => `-${gap}px`};
+      padding-right: ${({ gap }) => `${gap + 20}px`};
+      margin-right: ${({ gap }) => `-${gap + 20}px`};
     }
   }
 `;

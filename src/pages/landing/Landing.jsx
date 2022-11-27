@@ -13,13 +13,10 @@ function ImageGallery() {
       autoplay={4000}
       containerClassName={'Container'}
       containerStyle={{
-        width: '75%',
-        height: '300px',
         overflow: 'hidden',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        margin: 'auto',
       }}
     >
       <Carousel.Item>
@@ -35,14 +32,22 @@ function ImageGallery() {
   );
 }
 
+function ReccomendationSection() {
+  return (
+    <div>
+      <p>Reccomendation</p>
+    </div>
+  );
+}
+
 function LandingHome() {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <ImageGallery />
-      {/* <Reccomendation />
-      <About /> */}
-      <Footer />
+      <ReccomendationSection />
+      {/* <About /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
