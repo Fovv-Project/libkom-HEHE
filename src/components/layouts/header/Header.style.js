@@ -7,6 +7,23 @@ const HeaderWrap = styled.section `
     position: fixed;
     left: 0;
     right: 0;
+    display: flex;
+    .menu-btn Button{
+        text-align: center;
+        color: ${Colors.Brown};
+        background-color: ${Colors.Mustard};
+        border: 0;
+        font-size: 1.5rem ;
+        border-radius: 25%;
+        display: none;
+    }
+
+    @media (max-width: 741px) {
+        .menu-btn Button{
+            cursor: pointer;
+            display: block;
+        }
+    }
 `
 
 export default HeaderWrap;

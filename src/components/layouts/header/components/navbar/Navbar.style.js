@@ -10,7 +10,6 @@ const NavbarWrap = styled.section `
 
     .list-navbar li{
         /* background-color: ${Colors.Brown}; */
-        text-align: center;
         align-self: center;
     }
 
@@ -28,7 +27,16 @@ const NavbarWrap = styled.section `
         border-radius: 1.875rem;
         color: ${Colors.Brown};
         font-weight: 500;
+        text-align: center;
     }
+
+    span{
+        font-size: 1rem;
+        margin-right: 0.8rem;
+        display: none;
+    }
+
+    
 `;
 
 export default NavbarWrap;
