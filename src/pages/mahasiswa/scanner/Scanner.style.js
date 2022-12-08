@@ -2,14 +2,12 @@ import styled from "styled-components";
 import Colors from "../../../styles/colors";
 
 export const ScannerWrapper = styled.section`
-    .qr-screen {
-        height: 831px;
-        background-color: ${Colors.Black};
-        
-    }
     .scan-option {
         display: flex;
         flex-direction: row;
+        position: absolute;
+        width: 100vw;
+        z-index: 99;
         justify-content: space-between;
 
     }
@@ -28,6 +26,9 @@ export const ScannerWrapper = styled.section`
         margin: 4rem 3rem;
         cursor: pointer;
     }
+    /* .QRCodeWrapper{
+        height: 831px;
+    } */
     p {
         text-align: center;
         font-size: 20px;

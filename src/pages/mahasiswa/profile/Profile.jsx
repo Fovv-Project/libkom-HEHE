@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { ProfileWrapper } from './Profile.style.js'
-import { photoProfile } from "../../../assets";
+import { photoProfile } from "../../../assets/images";
 
 const Profile = () => (
     <ProfileWrapper>
