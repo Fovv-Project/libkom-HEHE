@@ -7,13 +7,7 @@ import AbsensiWrapper from './Absensi.style';
 const Absensi = () => {
     return (
         <AbsensiWrapper>
-            <div className='wrapper'>
-                <Sidebar />
-                
-                <div className='content'>
-                    <ShowAbsen />
-                </div>
-            </div>
+            <ShowAbsen />
         </AbsensiWrapper>
     );
 }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Colors from "../../../styles/colors";
 const SidebarWrapper = styled.div `
-    
+    position: absolute;
     background-color: ${Colors.Primary} ;
     width: fit-content;
     height: 100vh;
