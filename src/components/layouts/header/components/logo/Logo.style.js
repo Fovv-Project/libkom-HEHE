@@ -3,7 +3,7 @@ import Colors from "../../../../../styles/colors";
 const LogoWrap = styled.section `
     display: flex;
     align-items: center;
-    /* background-color: ${Colors.Primary}; */
+    margin-right: 4rem;
     width: 100vh;
     img {
         height: 2rem;

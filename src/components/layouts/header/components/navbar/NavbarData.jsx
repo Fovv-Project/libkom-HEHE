@@ -15,14 +15,4 @@ export const NavbarData = [
         path : '/',
         icon : <BiIcons.BiHome />
     },
-    {
-        name : 'Absensi',
-        path : '/',
-        icon : <BiIcons.BiHome />
-    },
-    {
-        name : 'Log Out',
-        path : '/',
-        icon : <BiIcons.BiHome />
-    },
 ]
