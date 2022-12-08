@@ -93,11 +93,13 @@ export const ProfileWrapper = styled.section`
         text-align: start;
     }
 
+    .history-peminjaman {
+        margin: 3rem 0rem;
+    }
     .history-absen, .history-peminjaman {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin: 1.25rem 0.625rem;
     }
 
     .history-recap {

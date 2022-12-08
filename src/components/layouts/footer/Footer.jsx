@@ -1,6 +1,6 @@
 import React from 'react';
 import FooterWrap from './Footer.style';
-import { logo } from '../../../assets';
+import { logo } from '../../../assets/images';
 const Footer = () => {
     return (
         <FooterWrap>
