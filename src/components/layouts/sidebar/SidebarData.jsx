@@ -8,7 +8,7 @@ export const SidebarData = [
     },
     {
         name : 'Absen',
-        path : '/',
+        path : '/absensi',
         icon : <BiIcons.BiUser/>
     },
     {
@@ -18,7 +18,7 @@ export const SidebarData = [
     },
     {
         name : 'Buku',
-        path : '/',
+        path : '/buku',
         icon : <BiIcons.BiBook />
     },
     {
