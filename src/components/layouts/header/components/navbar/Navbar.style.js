@@ -9,7 +9,6 @@ const NavbarWrap = styled.section `
     }
 
     .list-navbar .nav-menu{
-        /* background-color: ${Colors.Brown}; */
         align-self: center;
     }
 
