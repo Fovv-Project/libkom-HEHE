@@ -1,5 +1,8 @@
-import logo from "./images/logo1.png";
-import ilustration from "./images/Ilustration.png";
-import photoProfile from "./images/photoProfile.svg"
+import logo from './images/logo1.png';
+import ilustration from './images/Ilustration.png';
+import photoProfile from './images/photoProfile.svg';
 
-export {logo, ilustration, photoProfile};
+import successIcon from './icons/success.svg';
+import failedIcon from './icons/failed.svg';
+
+export { logo, ilustration, photoProfile, successIcon, failedIcon };

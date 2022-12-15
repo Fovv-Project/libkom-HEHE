@@ -1,23 +1,37 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ImageModal from './components/image_modal/ImageModal';
 import MessageModal from './components/message_modal/MessageModal';
-import { ModalContainer, CloseButton } from './Modal.style';
+import {
+  ModalContainer,
+  ModalButton,
+  ModalContent,
+  ModalFooter,
+} from './Modal.style';
 
-function Modal({ code, message }) {
-  const [isVisible, setIsVisible] = useState(true);
-
-  const onClose = () => setIsVisible(false);
+export function ResponseModal({ code, message, handleClose }) {
   return (
-    isVisible && (
-      <ModalContainer className="Modal Container">
-        <ImageModal code={code} />
+    <ModalContainer>
+      <ModalContent className="Modal Container">
+        {code && <ImageModal code={code} />}
         <MessageModal message={message} />
-        <CloseButton className="Close Button" onClick={onClose}>
+        <ModalButton className="Close Button" onClick={handleClose}>
           Tutup
-        </CloseButton>
-      </ModalContainer>
-    )
+        </ModalButton>
+      </ModalContent>
+    </ModalContainer>
   );
 }
 
-export default Modal;
+export function ConfirmationModal({ message, handleOk, handleCancel }) {
+  return (
+    <ModalContainer>
+      <ModalContent>
+        <MessageModal message={message} />
+        <ModalFooter>
+          <ModalButton onClick={handleCancel}>Cancel</ModalButton>
+          <ModalButton onClick={handleOk}>Ok</ModalButton>
+        </ModalFooter>
+      </ModalContent>
+    </ModalContainer>
+  );
+}
