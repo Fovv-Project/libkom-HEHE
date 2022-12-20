@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { LoginWrapper } from './Login.style.js'
-import { logo, ilustration } from "../../assets";
+import { logo, ilustration } from "../../assets/images";
 
 
 const Login = () => {

@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components"
-import Colors from "./colors"
+import { createGlobalStyle } from 'styled-components';
+import Colors from './colors';
 export const GlobalStyle = createGlobalStyle`
 
   * {
@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 75%;
   }
 
-  @media (max-width: 425px) {
+  @media (max-width: 428px) {
     font-size: 50%;
   }
 }
@@ -35,7 +35,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1.6rem;
     line-height: 1.6;
     color: #2A2A2A;
-    background-color: ${Colors.White};
+    background-color: ${Colors.Primary};
   }
 
   ul {
@@ -68,4 +68,4 @@ export const GlobalStyle = createGlobalStyle`
   button {
     font-family: 'Inter', sans-serif;
   }
-`
+`;
