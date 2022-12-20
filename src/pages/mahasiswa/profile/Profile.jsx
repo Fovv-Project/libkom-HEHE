@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import { ProfileWrapper } from './Profile.style.js'
-import { photoProfile } from "../../../assets";
+import { photoProfile } from "../../../assets/images";
 
 const Profile = () => (
     <ProfileWrapper>
@@ -12,9 +12,10 @@ const Profile = () => (
             <img alt="PhotoProfile" className="photo-profile" src={photoProfile} />
             <div className="absen">
                 <p>Selamat datang, Shabrina Rafika!</p>
+                <p>09021281924049</p>
                 <div className="absenQR-section">
                     <button className="absen-QR" type="button">
-                        <Link to="/profile">Absen dulu, yuk!</Link>
+                        <Link to="/scanner">Absen dulu, yuk!</Link>
                     </button>
                 </div>
             </div>

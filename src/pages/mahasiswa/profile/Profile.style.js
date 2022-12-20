@@ -28,13 +28,19 @@ export const ProfileWrapper = styled.section`
         height: 4.625rem;
     }
 
-    .absen{
+    .absen {
         margin-left: 2rem;
         padding: 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+
+    .absen p {
+        display: flex;
+        align-items: flex-start;
+    }
+
     .absenQR-section {
         display: flex;
         justify-content: end;
