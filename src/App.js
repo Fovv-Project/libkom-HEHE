@@ -1,11 +1,7 @@
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './styles/baseStyles.js';
-import { GlobalStyle } from "./styles/baseStyles.js";
-import LandingHome from './pages/mahasiswa/LandingHome';
+import { GlobalStyle } from './styles/baseStyles.js';
+import LandingHome from './pages/landing/Landing';
 import ScanLoading from './pages/mahasiswa/ScanLoading';
 import Scanning from './pages/mahasiswa/Scanning';
 import Dashboard from './pages/admin/Dashboard';
@@ -33,8 +29,7 @@ const App = () => {
         </Routes>
       </Router>
     </>
-
   );
-}
+};
 
 export default App;
