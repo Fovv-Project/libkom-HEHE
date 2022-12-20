@@ -5,9 +5,9 @@ import LandingHome from './pages/landing/Landing';
 import ScanLoading from './pages/mahasiswa/ScanLoading';
 import Scanning from './pages/mahasiswa/Scanning';
 import Dashboard from './pages/admin/Dashboard';
-import AbsenList from './pages/admin/AbsenList';
-import Profile from './pages/mahasiswa/profile/Profile';
-import Login from './pages/login/Login';
+import Absensi from './pages/admin/absensi/Absensi.jsx';
+import Profile from './pages/mahasiswa/Profile';
+import Login from './pages/login/Login'
 import LoginAdmin from './pages/admin/login/Login';
 import Scanner from './pages/mahasiswa/scanner/Scanner';
 
@@ -27,7 +27,7 @@ const App = () => {
           <Route path='/scanning' element={<Scanning />} />
           <Route path='/scanload' element={<ScanLoading />} />
           <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/absenlist' element={<AbsenList />} />
+          <Route path='/absensi' element={<Absensi />} />
         </Routes>
       </Router>
     </>
