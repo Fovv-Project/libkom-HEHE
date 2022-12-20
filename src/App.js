@@ -8,6 +8,7 @@ import Dashboard from './pages/admin/Dashboard';
 import AbsenList from './pages/admin/AbsenList';
 import Profile from './pages/mahasiswa/profile/Profile';
 import Login from './pages/login/Login';
+import LoginAdmin from './pages/admin/login/Login';
 import Scanner from './pages/mahasiswa/scanner/Scanner';
 
 
@@ -20,6 +21,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<LandingHome />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/loginAdmin' element={<LoginAdmin />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/scanner' element={<Scanner />} />
           <Route path='/scanning' element={<Scanning />} />
