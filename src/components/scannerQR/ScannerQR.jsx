@@ -65,11 +65,6 @@ const QRcode = () => {
     return (
       <>
       <div id={qrcodeRegionId}  />
-      {/* {
-       device && device.map(res => (
-          <li>{JSON.stringify(res)}</li>
-        )) 
-      } */}
       </>
     )
   }

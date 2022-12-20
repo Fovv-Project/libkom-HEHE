@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Colors from "../../../styles/colors";
 
 export const ScannerWrapper = styled.section`
     .scan-option {
@@ -14,7 +13,6 @@ export const ScannerWrapper = styled.section`
     .backIcon {
         margin: 4rem 3rem;
         cursor: pointer;
-        /* float: left; */
     }
     .flashIcon { 
         border-radius: 100%;
@@ -26,9 +24,6 @@ export const ScannerWrapper = styled.section`
         margin: 4rem 3rem;
         cursor: pointer;
     }
-    /* .QRCodeWrapper{
-        height: 831px;
-    } */
     p {
         text-align: center;
         font-size: 20px;
