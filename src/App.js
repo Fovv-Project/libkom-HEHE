@@ -8,6 +8,8 @@ import Dashboard from './pages/admin/Dashboard';
 import AbsenList from './pages/admin/AbsenList';
 import Profile from './pages/mahasiswa/profile/Profile';
 import Login from './pages/login/Login';
+import Scanner from './pages/mahasiswa/scanner/Scanner';
+
 
 const App = () => {
   return (
@@ -16,13 +18,14 @@ const App = () => {
 
       <Router>
         <Routes>
-          <Route path="/" element={<LandingHome />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/scanning" element={<Scanning />} />
-          <Route path="/scanload" element={<ScanLoading />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          <Route path="/absenlist" element={<AbsenList />} />
+          <Route path='/' element={<LandingHome />} />
+          <Route path='/login' element={<Login />} />
+          <Route path='/profile' element={<Profile />} />
+          <Route path='/scanner' element={<Scanner />} />
+          <Route path='/scanning' element={<Scanning />} />
+          <Route path='/scanload' element={<ScanLoading />} />
+          <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/absenlist' element={<AbsenList />} />
         </Routes>
       </Router>
     </>
