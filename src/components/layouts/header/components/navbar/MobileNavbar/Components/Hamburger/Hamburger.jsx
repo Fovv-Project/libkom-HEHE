@@ -1,5 +1,4 @@
 import React from 'react';
-import { bool, func } from 'prop-types';
 import { StyledBurger } from './Hamburger.style';
 
 function Hamburger({ open, setOpen }) {

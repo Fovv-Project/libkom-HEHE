@@ -5,9 +5,8 @@ import Carousel from './components/carousel/Carousel';
 import CardGallery from './components/card_gallery/CardGallery';
 import TextSection from './components/about/TextSection';
 import RECOMMENDED_BOOKS from './Landing.data';
-import Hamburger from '../../components/layouts/header/components/navbar/hamburger/Hamburger';
-import Menu from '../../components/layouts/header/components/navbar/hamburger/menu/Menu';
 import { useState } from 'react';
+import MobileNavbar from '../../components/layouts/header/components/navbar/MobileNavbar/MobileNavbar';
 
 function RecommendationSection() {
   const Header = 'Rekomendasi';
@@ -68,10 +67,7 @@ function LandingHome() {
   return (
     <div>
       {/* <Header /> */}
-      <div>
-        <Hamburger open={open} setOpen={setOpen} />
-        <Menu open={open} />
-      </div>
+      <MobileNavbar open={open} setOpen={setOpen} />
       {/* <ImageGallery />
       <RecommendationSection />
       <AboutSection /> */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './components/logo/Logo';
-import Navbar from './components/navbar/Navbar';
+import Navbar from './components/navbar/DesktopNavbar/Navbar';
 import HeaderWrap from './Header.style';
 // import * as BiIcons from 'react-icons/bi';
 // import { useState } from "react";

@@ -1,11 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import { bool, func } from 'prop-types';
 import NavbarWrap from './Navbar.style';
 import { NavbarData } from './NavbarData';
 import * as BiIcons from 'react-icons/bi';
-import Hamburger from './hamburger/Hamburger';
-import Menu from './hamburger/menu/Menu';
 
 const Navbar = () => {
   const [dropDown, setDropdown] = useState(false);
@@ -53,20 +50,6 @@ const Navbar = () => {
       </div>
     </NavbarWrap>
   );
-};
-
-export function MobileNavbar({ open, setOpen }) {
-  return (
-    <div>
-      <Hamburger open={open} setOpen={setOpen} />
-      <Menu open={open} />
-    </div>
-  );
-}
-
-MobileNavbar.propTypes = {
-  open: bool.isRequired,
-  setOpen: func.isRequired,
 };
 
 export default Navbar;
