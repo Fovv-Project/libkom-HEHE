@@ -7,10 +7,9 @@ import Scanning from './pages/mahasiswa/Scanning';
 import Dashboard from './pages/admin/Dashboard';
 import Absensi from './pages/admin/absensi/Absensi.jsx';
 import Profile from './pages/mahasiswa/Profile';
-import Login from './pages/login/Login'
+import Login from './pages/login/Login';
 import LoginAdmin from './pages/admin/login/Login';
 import Scanner from './pages/mahasiswa/scanner/Scanner';
-
 
 const App = () => {
   return (
@@ -19,15 +18,15 @@ const App = () => {
 
       <Router>
         <Routes>
-          <Route path='/' element={<LandingHome />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/loginAdmin' element={<LoginAdmin />} />
-          <Route path='/profile' element={<Profile />} />
-          <Route path='/scanner' element={<Scanner />} />
-          <Route path='/scanning' element={<Scanning />} />
-          <Route path='/scanload' element={<ScanLoading />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/absensi' element={<Absensi />} />
+          <Route path="/" element={<LandingHome />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/loginAdmin" element={<LoginAdmin />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/scanner" element={<Scanner />} />
+          <Route path="/scanning" element={<Scanning />} />
+          <Route path="/scanload" element={<ScanLoading />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/absensi" element={<Absensi />} />
         </Routes>
       </Router>
     </>

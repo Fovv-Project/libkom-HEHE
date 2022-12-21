@@ -5,13 +5,13 @@ import React from 'react';
 // import { ilustration } from '../../assets/images';
 
 const LandingHome = () => {
-    return (
-        <div>
-            {/* <ShowAbsen /> */}
-            {/* <Header /> */}
-            <a href="/absensi">Absensi</a>
-        </div>
-    );
-}
+  return (
+    <div>
+      {/* <ShowAbsen /> */}
+      {/* <Header /> */}
+      <a href="/absensi">Absensi</a>
+    </div>
+  );
+};
 
 export default LandingHome;

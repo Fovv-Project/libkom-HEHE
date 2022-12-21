@@ -5,6 +5,9 @@ import Carousel from './components/carousel/Carousel';
 import CardGallery from './components/card_gallery/CardGallery';
 import TextSection from './components/about/TextSection';
 import RECOMMENDED_BOOKS from './Landing.data';
+import Hamburger from '../../components/layouts/header/components/navbar/hamburger/Hamburger';
+import Menu from '../../components/layouts/header/components/navbar/hamburger/menu/Menu';
+import { useState } from 'react';
 
 function RecommendationSection() {
   const Header = 'Rekomendasi';
@@ -60,12 +63,18 @@ Untuk menambah pengalaman Ruang Baca, Fakultas Ilmu Komputer menyediakan website
 }
 
 function LandingHome() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
       {/* <Header /> */}
-      <ImageGallery />
+      <div>
+        <Hamburger open={open} setOpen={setOpen} />
+        <Menu open={open} />
+      </div>
+      {/* <ImageGallery />
       <RecommendationSection />
-      <AboutSection />
+      <AboutSection /> */}
       {/* <Footer /> */}
     </div>
   );
