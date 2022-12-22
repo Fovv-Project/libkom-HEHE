@@ -1,5 +1,5 @@
-import { getFirebaseApp } from '../Init.js';
-import * as firebaseAuth from 'firebase/auth';
+import { getFirebaseApp } from "../Init.js";
+import * as firebaseAuth from "firebase/auth";
 
 // initialize firebase
 const firebase = getFirebaseApp();

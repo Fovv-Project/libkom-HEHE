@@ -1,5 +1,5 @@
-import React from 'react';
-import { BodyWrapper, BodyText } from './TextSectionBody.style';
+import React from "react";
+import { BodyWrapper, BodyText } from "./TextSectionBody.style";
 
 function TextSectionBody({ text }) {
   const paragraphs = text.split(/\n\n/);

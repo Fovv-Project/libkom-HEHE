@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const AbsenList = () => {
-    return (
-        <div>
-            ini halaman daftar absen di admin
-        </div>
-    );
-}
+  return <div>ini halaman daftar absen di admin</div>;
+};
 
 export default AbsenList;

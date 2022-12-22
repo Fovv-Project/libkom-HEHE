@@ -1,14 +1,14 @@
-import React from 'react';
-import smoothscroll from 'smoothscroll-polyfill';
-import { useState, useRef, useMemo, useEffect, useCallback } from 'react';
+import React from "react";
+import smoothscroll from "smoothscroll-polyfill";
+import { useState, useRef, useMemo, useEffect, useCallback } from "react";
 
-import useResponsiveLayout from '../../../../hooks/useResponsiveLayout';
+import useResponsiveLayout from "../../../../hooks/useResponsiveLayout";
 import {
   addResizeHandler,
   removeResizeHandler,
-} from '../../../../utils/ResizeListener';
-import ArrowButton from './components/arrow_button/ArrowButton';
-import Dot from './components/dot/Dot';
+} from "../../../../utils/ResizeListener";
+import ArrowButton from "./components/arrow_button/ArrowButton";
+import Dot from "./components/dot/Dot";
 
 import {
   Item,
@@ -17,9 +17,9 @@ import {
   Dots,
   Rail,
   RailWrapper,
-} from './Carousel.style';
+} from "./Carousel.style";
 
-const CAROUSEL_ITEM = 'CAROUSEL_ITEM';
+const CAROUSEL_ITEM = "CAROUSEL_ITEM";
 
 function Carousel({
   cols: colsProp = 1,
@@ -30,14 +30,14 @@ function Carousel({
   hideArrow = false,
   showDots = false,
   autoplay: autoplayProp,
-  dotColorActive = '#795548',
-  dotColorInactive = '#ccc',
+  dotColorActive = "#795548",
+  dotColorInactive = "#ccc",
   responsiveLayout,
   mobileBreakpoint = 428,
   arrowLeft,
   arrowRight,
   dot,
-  containerClassName = '',
+  containerClassName = "",
   containerStyle = {},
   children,
 }) {
@@ -73,27 +73,27 @@ function Carousel({
     (gap) => {
       let parsed = gap;
       let shouldSetResizeHandler = false;
-      if (typeof gap !== 'number') {
+      if (typeof gap !== "number") {
         switch (/\D*$/.exec(gap)[0]) {
-          case 'px': {
-            parsed = +gap.replace('px', '');
-            break;
-          }
-          case '%': {
-            let wrapperWidth =
+        case "px": {
+          parsed = +gap.replace("px", "");
+          break;
+        }
+        case "%": {
+          let wrapperWidth =
               railWrapperWidth || railWrapperRef.current
                 ? railWrapperRef.current.offsetWidth
                 : 0;
-            parsed = (wrapperWidth * gap.replace('%', '')) / 100;
-            shouldSetResizeHandler = true;
-            break;
-          }
-          default: {
-            parsed = 0;
-            console.error(
-              `Doesn't support the provided measurement unit: ${gap}`
-            );
-          }
+          parsed = (wrapperWidth * gap.replace("%", "")) / 100;
+          shouldSetResizeHandler = true;
+          break;
+        }
+        default: {
+          parsed = 0;
+          console.error(
+            `Doesn't support the provided measurement unit: ${gap}`
+          );
+        }
         }
       }
       shouldSetResizeHandler && !hasSetResizeHandler && setResizeHandler();
@@ -163,11 +163,11 @@ function Carousel({
             loop && scrollLeft + offsetWidth >= scrollWidth
               ? -scrollLeft
               : scrollLeft === 0
-              ? gap +
+                ? gap +
                 (offsetWidth - gap) * 0.9 -
                 (offsetWidth * 0.1 - gap * 1.1) / 2
-              : (offsetWidth - gap) * 0.9 + gap,
-          behavior: 'smooth',
+                : (offsetWidth - gap) * 0.9 + gap,
+          behavior: "smooth",
         });
       } else {
         setCurrentPage((p) => {
@@ -183,7 +183,7 @@ function Carousel({
   );
 
   const startAutoplayInterval = useCallback(() => {
-    if (autoplayIntervalRef.current === null && typeof autoplay === 'number') {
+    if (autoplayIntervalRef.current === null && typeof autoplay === "number") {
       autoplayIntervalRef.current = setInterval(() => {
         handleNext(window.innerWidth <= mobileBreakpoint);
       }, autoplay);
@@ -315,7 +315,7 @@ function Carousel({
 
 const positiveNumberValidator = (props, propName, componentName) => {
   const prop = props[propName];
-  if ((prop !== undefined && typeof prop !== 'number') || prop <= 0) {
+  if ((prop !== undefined && typeof prop !== "number") || prop <= 0) {
     return new Error(
       `Invalid prop \`${propName}\`: ${props[propName]} supplied to \`${componentName}\`. expected positive \`number\``
     );

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Colors from "../../../styles/colors";
-const FooterWrap = styled.section `
+
+const FooterWrap = styled.section`
     background-color: ${Colors.Brown} ;
     text-align: center;
     padding: 2rem;
@@ -39,6 +40,6 @@ const FooterWrap = styled.section `
         font-size: 0.8rem;
         color: rgba(255, 255, 255, 0.4);
     }
-`
+`;
 
 export default FooterWrap;

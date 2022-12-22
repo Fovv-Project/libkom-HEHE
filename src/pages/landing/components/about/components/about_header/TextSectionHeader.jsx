@@ -1,5 +1,5 @@
-import React from 'react';
-import { HeaderWrapper, HeaderText } from './TextSectionHeader.style';
+import React from "react";
+import { HeaderWrapper, HeaderText } from "./TextSectionHeader.style";
 
 function TextSectionHeader({ text }) {
   return (

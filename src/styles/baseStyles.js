@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import Colors from './colors';
+import { createGlobalStyle } from "styled-components";
+import Colors from "./colors";
 export const GlobalStyle = createGlobalStyle`
 
   * {
@@ -11,11 +11,11 @@ export const GlobalStyle = createGlobalStyle`
   html {
   font-size: 100%;
 
-  @media (max-width: 1124px) {
+  @media (max-width: 1024px) {
     font-size: 75%;
   }
 
-  @media (max-width: 428px) {
+  @media (max-width: 426px) {
     font-size: 50%;
   }
 }
@@ -52,16 +52,19 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .container {
-    margin: 0 10rem;
+    margin: 0 auto;
 
     @media (max-width: 1440px) {
-      margin: 0 9rem;
+      margin: 0 10rem;
     }
-    @media (max-width: 761px) {
-      margin: 0 6rem;
+    @media (max-width: 1024px) {
+      margin: 0 5rem;
+    }
+    @media (max-width: 768px) {
+      margin: 0 4rem;
     }
     @media (max-width: 426px) {
-      margin: 0 3rem;
+      margin: 0 2rem;
     }
   }
 

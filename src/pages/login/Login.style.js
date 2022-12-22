@@ -10,6 +10,10 @@ export const LoginWrapper = styled.section`
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        img {
+            width: 20rem;
+        }
     }
 
     .ilustration {
@@ -27,6 +31,6 @@ export const LoginWrapper = styled.section`
         font-weight: bolder;
         font-size: 1.25rem;
         margin: auto;
-        
+        cursor: pointer;
     }
 `;
