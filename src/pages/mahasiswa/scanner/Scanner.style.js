@@ -30,5 +30,4 @@ export const ScannerWrapper = styled.section`
         font-weight: 600;
         margin : 1.75rem;
     }
-    
 `;

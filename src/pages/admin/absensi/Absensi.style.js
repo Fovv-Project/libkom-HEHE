@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const AbsensiWrapper = styled.div `
+const AbsensiWrapper = styled.div`
     .wrapper {
         display: flex;
     }
@@ -11,6 +11,6 @@ const AbsensiWrapper = styled.div `
         padding-right: 5rem;
         padding-bottom: 1rem;
     }
-`
+`;
 
 export default AbsensiWrapper;

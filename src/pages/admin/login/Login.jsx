@@ -1,16 +1,19 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-import { LoginWrapper } from './Login.style.js'
+import { Link } from "react-router-dom";
+import { LoginWrapper } from "./Login.style.js";
 import { logo, ilustrationAdminLogin } from "../../../assets/images";
-
 
 const LoginAdmin = () => {
   return (
     <LoginWrapper>
       <div className="login-box">
-        <img alt="ilustrationAdminLogin" className="ilustrationAdminLogin" src={ilustrationAdminLogin} />
+        <img
+          alt="ilustrationAdminLogin"
+          className="ilustrationAdminLogin"
+          src={ilustrationAdminLogin}
+        />
         <img alt="LogoLib" className="logo-lib" src={logo} />
-        
+
         <form>
           <label>
             Email
@@ -24,10 +27,9 @@ const LoginAdmin = () => {
             <Link to="/profile">Login</Link>
           </button>
         </form>
-      </ div>
+      </div>
     </LoginWrapper>
-  )
-
+  );
 };
 
 export default LoginAdmin;

@@ -1,11 +1,10 @@
-import React from 'react';
+import React from "react";
 import { ScannerWrapper } from "./Scanner.style";
 import { backIcon, flashIcon } from "../../../assets/images";
 import QRcode from "../../../components/scannerQR/index.js";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Scanners = () => (
-  
   <ScannerWrapper>
     <div className="qr-screen">
       <div className="scan-option">
@@ -16,13 +15,12 @@ const Scanners = () => (
           <img src={flashIcon} alt="flashIcon" />
         </button>
       </div>
-      <div className='QRCodeWrapper'>
-        <QRcode/>
+      <div className="QRCodeWrapper">
+        <QRcode />
       </div>
     </div>
     <p>Scan barcode pada pintu Ruang Baca untuk melakukan absensi</p>
   </ScannerWrapper>
-
 );
 
 export default Scanners;

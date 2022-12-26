@@ -1,7 +1,7 @@
- import styled from "styled-components";
- import Colors from "../../../styles/colors";
+import styled from "styled-components";
+import Colors from "../../../styles/colors";
 
- const TableStyles = styled.div `
+const TableStyles = styled.div `
  background-color: ${Colors.Mustard};
   display: flex;
   flex-direction: column;
@@ -110,5 +110,5 @@
     color: #999999;
     font-size: 1.5rem;
   }
-`
- export default TableStyles;
+`;
+export default TableStyles;

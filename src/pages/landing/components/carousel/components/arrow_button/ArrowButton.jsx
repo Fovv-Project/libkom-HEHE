@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import { ButtonWrapper, Button } from './ArrowButton.style';
+import { ButtonWrapper, Button } from "./ArrowButton.style";
 
 const ArrowButton = ({
   type,
@@ -16,7 +16,7 @@ const ArrowButton = ({
     onClick={onClick}
   >
     {CustomBtn ? (
-      typeof CustomBtn === 'function' ? (
+      typeof CustomBtn === "function" ? (
         <CustomBtn />
       ) : (
         CustomBtn
@@ -28,7 +28,7 @@ const ArrowButton = ({
 );
 
 ArrowButton.propTypes = {
-  type: PropTypes.oneOf(['prev', 'next']).isRequired,
+  type: PropTypes.oneOf(["prev", "next"]).isRequired,
   mobileBreakpoint: PropTypes.number,
   hidden: PropTypes.bool,
   CustomBtn: PropTypes.oneOfType([

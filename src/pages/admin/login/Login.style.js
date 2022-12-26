@@ -38,7 +38,7 @@ export const LoginWrapper = styled.section`
         height: 3rem;
         border-radius: 1.5625rem;
         font-size: 1rem;
-        padding-left: 2rem;
+        padding: 1rem 2rem;
     }
 
     ::placeholder {
@@ -56,6 +56,5 @@ export const LoginWrapper = styled.section`
         font-weight: bolder;
         font-size: 1.25rem;
         margin: 1rem;
-        
     }
 `;

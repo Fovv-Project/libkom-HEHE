@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   CardImageWrapper,
   CardImage,
@@ -6,13 +6,13 @@ import {
   CardDescription,
   CardTitleWrapper,
   CardDescriptionWrapper,
-} from './Card.style';
+} from "./Card.style";
 
 function Card({ imageUrl, title, description }) {
   return (
     <>
       <CardImageWrapper className="Card Image">
-        <CardImage width={'100%'} src={imageUrl} />
+        <CardImage width={"100%"} src={imageUrl} />
       </CardImageWrapper>
       <CardTitleWrapper className="Card Title">
         <CardTitle className="Title Text">{title}</CardTitle>
