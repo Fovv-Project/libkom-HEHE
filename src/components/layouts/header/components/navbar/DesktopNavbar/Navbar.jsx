@@ -3,6 +3,7 @@ import { useState } from "react";
 import NavbarWrap from "./Navbar.style";
 import { NavbarData } from "./NavbarData";
 import * as BiIcons from "react-icons/bi";
+
 const Navbar = () => {
   const [dropDown, setDropdown] = useState(false);
 

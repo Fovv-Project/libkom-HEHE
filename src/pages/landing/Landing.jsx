@@ -5,6 +5,8 @@ import Carousel from "./components/carousel/Carousel";
 import CardGallery from "./components/card_gallery/CardGallery";
 import TextSection from "./components/about/TextSection";
 import { RECOMMENDED_BOOKS } from "./Landing.data";
+import { useState } from "react";
+import MobileNavbar from "../../components/layouts/header/components/navbar/MobileNavbar/MobileNavbar";
 
 function RecommendationSection() {
   const Header = "Rekomendasi";
@@ -57,12 +59,15 @@ function AboutSection() {
 }
 
 function LandingHome() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
       {/* <Header /> */}
-      <ImageGallery />
+      <MobileNavbar open={open} setOpen={setOpen} />
+      {/* <ImageGallery />
       <RecommendationSection />
-      <AboutSection />
+      <AboutSection /> */}
       {/* <Footer /> */}
     </div>
   );

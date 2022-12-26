@@ -19,15 +19,15 @@ const App = () => {
 
       <Router>
         <Routes>
-          <Route path='/' element={<LandingHome />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/loginAdmin' element={<LoginAdmin />} />
-          <Route path='/profile' element={<Profile />} />
-          <Route path='/scanner' element={<Scanner />} />
-          <Route path='/scanning' element={<Scanning />} />
-          <Route path='/scanload' element={<ScanLoading />} />
-          <Route path='/dashboard' element={<Dashboard />} />
-          <Route path='/absensi' element={<Absensi />} />
+          <Route path="/" element={<LandingHome />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/loginAdmin" element={<LoginAdmin />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/scanner" element={<Scanner />} />
+          <Route path="/scanning" element={<Scanning />} />
+          <Route path="/scanload" element={<ScanLoading />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/absensi" element={<Absensi />} />
         </Routes>
       </Router>
     </>
