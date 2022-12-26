@@ -11,11 +11,14 @@ import Login from "./pages/login/Login";
 import LoginAdmin from "./pages/admin/login/Login";
 import Scanner from "./pages/mahasiswa/scanner/Scanner";
 import "./styles/baseStyles.js";
+import Buku from "./pages/admin/buku/Buku.jsx";
+import Sidebar from "./components/layouts/sidebar/Sidebar.jsx";
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
+      {/* <Sidebar /> */}
 
       <Router>
         <Routes>
@@ -28,6 +31,7 @@ const App = () => {
           <Route path="/scanload" element={<ScanLoading />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/absensi" element={<Absensi />} />
+          <Route path='/buku' element={< Buku />} />
         </Routes>
       </Router>
     </>

@@ -1,13 +1,16 @@
 import styled from "styled-components";
 import Colors from "../../../styles/colors";
 const SidebarWrapper = styled.div `
-    padding-top: 5rem;
+    position: absolute;
     background-color: ${Colors.Primary} ;
     width: fit-content;
     height: 100vh;
     font-size: 1.25rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    .sidebar {
+        padding-top: 5rem;
+    }
     .list-sidebar {
         padding: 0.25rem 2rem;
         display: flex;
