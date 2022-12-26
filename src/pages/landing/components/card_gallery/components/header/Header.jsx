@@ -1,5 +1,5 @@
-import React from 'react';
-import { HeaderWrapper, HeaderText } from './Header.style';
+import React from "react";
+import { HeaderWrapper, HeaderText } from "./Header.style";
 
 function Header({ children }) {
   return (

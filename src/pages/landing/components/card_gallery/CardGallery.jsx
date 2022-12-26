@@ -1,8 +1,8 @@
-import React from 'react';
-import Card from './components/card/Card';
-import Header from './components/header/Header';
-import NavigationButton from './components/navigation_button/NavigationButton';
-import { Container, ItemWrapper, Item } from './CardGallery.style.js';
+import React from "react";
+import Card from "./components/card/Card";
+import Header from "./components/header/Header";
+import NavigationButton from "./components/navigation_button/NavigationButton";
+import { Container, ItemWrapper, Item } from "./CardGallery.style.js";
 
 function CardGallery({ header, navigation, data }) {
   return (

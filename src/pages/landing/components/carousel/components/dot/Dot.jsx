@@ -1,7 +1,7 @@
-import React, { useCallback } from 'react';
-import PropTypes from 'prop-types';
+import React, { useCallback } from "react";
+import PropTypes from "prop-types";
 
-import { DotDefault, DotWrapper } from './Dot.style';
+import { DotDefault, DotWrapper } from "./Dot.style";
 
 const Dot = ({
   index,

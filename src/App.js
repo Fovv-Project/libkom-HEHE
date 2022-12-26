@@ -1,16 +1,16 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './styles/baseStyles.js';
-import { GlobalStyle } from './styles/baseStyles.js';
-import LandingHome from './pages/landing/Landing';
-import ScanLoading from './pages/mahasiswa/ScanLoading';
-import Scanning from './pages/mahasiswa/Scanning';
-import Dashboard from './pages/admin/Dashboard';
-import Absensi from './pages/admin/absensi/Absensi.jsx';
-import Profile from './pages/mahasiswa/Profile';
-import Login from './pages/login/Login'
-import LoginAdmin from './pages/admin/login/Login';
-import Scanner from './pages/mahasiswa/scanner/Scanner';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { GlobalStyle } from "./styles/baseStyles.js";
+import LandingHome from "./pages/landing/Landing";
+import ScanLoading from "./pages/mahasiswa/ScanLoading";
+import Scanning from "./pages/mahasiswa/Scanning";
+import Dashboard from "./pages/admin/Dashboard";
+import Absensi from "./pages/admin/absensi/Absensi.jsx";
+import Profile from "./pages/mahasiswa/profile/Profile";
+import Login from "./pages/login/Login";
+import LoginAdmin from "./pages/admin/login/Login";
+import Scanner from "./pages/mahasiswa/scanner/Scanner";
+import "./styles/baseStyles.js";
 
 const App = () => {
   return (

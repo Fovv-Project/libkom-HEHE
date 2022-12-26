@@ -1,5 +1,5 @@
-import { useEffect, useCallback, useState, useMemo } from 'react';
-import { addResizeHandler, removeResizeHandler } from '../utils/ResizeListener';
+import { useEffect, useCallback, useState, useMemo } from "react";
+import { addResizeHandler, removeResizeHandler } from "../utils/ResizeListener";
 
 const useResponsiveLayout = (breakpointList = []) => {
   const [currentBreakpointSetting, setCurrentBreakpointSetting] = useState();

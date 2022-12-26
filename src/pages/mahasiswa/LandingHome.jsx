@@ -1,17 +1,14 @@
-import React from 'react';
-// import { Link } from "react-router-dom";
-// import Footer from '../../components/layouts/footer/Footer.jsx';
-// import Header from '../../components/layouts/header/Header.jsx';
-// import { ilustration } from '../../assets/images';
+import React from "react";
+import Footer from "../../components/layouts/footer/Footer.jsx";
+import Header from "../../components/layouts/header/Header.jsx";
 
 const LandingHome = () => {
-    return (
-        <div>
-            {/* <ShowAbsen /> */}
-            {/* <Header /> */}
-            <a href="/absensi">Absensi</a>
-        </div>
-    );
-}
+  return (
+    <div>
+      <Header />
+      <Footer />
+    </div>
+  );
+};
 
 export default LandingHome;

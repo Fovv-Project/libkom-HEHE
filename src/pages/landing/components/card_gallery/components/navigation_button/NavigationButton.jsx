@@ -1,5 +1,5 @@
-import React from 'react';
-import { ButtonWrapper, ButtonNavigation } from './NavigationButton.style';
+import React from "react";
+import { ButtonWrapper, ButtonNavigation } from "./NavigationButton.style";
 
 function NavigationButton({ url, children }) {
   return (

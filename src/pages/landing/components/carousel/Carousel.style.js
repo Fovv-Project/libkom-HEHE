@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   position: relative;
@@ -13,12 +13,12 @@ export const Container = styled.div`
 
 export const RailWrapper = styled.div`
   overflow: hidden;
-  margin: ${({ showDots }) => (showDots ? '0 20px 15px 20px' : '0 auto')};
+  margin: ${({ showDots }) => (showDots ? "0 20px 15px 20px" : "0 auto")};
 
   @media (max-width: ${({ mobileBreakpoint }) => mobileBreakpoint}px) {
     overflow-x: auto;
     margin: 0;
-    scroll-snap-type: ${({ scrollSnap }) => (scrollSnap ? 'x mandatory' : '')};
+    scroll-snap-type: ${({ scrollSnap }) => (scrollSnap ? "x mandatory" : "")};
     scrollbar-width: none;
 
     &::-webkit-scrollbar {
@@ -40,13 +40,13 @@ export const Rail = styled.div`
     padding-left: ${({ gap }) => `${gap + 20}px`};
     grid-template-columns: ${({ page }) => `repeat(${page}, 90%)`};
     grid-column-gap: ${({ cols, rows, gap }) =>
-      `calc(${(cols * rows - 1) * 90}% + ${cols * rows * gap}px)`};
+    `calc(${(cols * rows - 1) * 90}% + ${cols * rows * gap}px)`};
     transform: translateX(0);
   }
 `;
 
 export const Item = styled.div`
-  scroll-snap-align: ${({ scrollSnap }) => (scrollSnap ? 'center' : '')};
+  scroll-snap-align: ${({ scrollSnap }) => (scrollSnap ? "center" : "")};
   margin: auto;
 `;
 
@@ -58,7 +58,7 @@ export const ItemSet = styled.div`
 
   @media (max-width: ${({ mobileBreakpoint }) => mobileBreakpoint}px) {
     grid-template-columns: ${({ cols, rows }) =>
-      `repeat(${cols * rows}, 100%)`};
+    `repeat(${cols * rows}, 100%)`};
     grid-template-rows: 1fr;
 
     &:last-of-type > ${Item}:last-of-type {
