@@ -1,5 +1,4 @@
 import React from 'react';
-// import Scanner from "react-webcam-qr-scanner";
 import { ScannerWrapper } from "./Scanner.style";
 import { backIcon, flashIcon } from "../../../assets/images";
 import QRcode from "../../../components/scannerQR/index.js";

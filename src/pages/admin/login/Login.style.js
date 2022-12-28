@@ -5,7 +5,7 @@ export const LoginWrapper = styled.section`
     background: linear-gradient(180deg, #FFF2DD 68.54%, #FFFFFF 100%);
     height: 100vh;
     
-    .login-box{
+    .container{
         padding-top: 5rem;
         display: flex;
         flex-direction: column;

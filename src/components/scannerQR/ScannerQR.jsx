@@ -7,24 +7,12 @@ const QRcode = () => {
     const [device, setdevice] = useState()
   
     useEffect(() => {
-      // This method will trigger user permissions
       Html5Qrcode.getCameras().then(devices => {
-        /**
-         * devices would be an array of objects of type:
-         *  
-         * { id: "id", label: "label" }
-         *  
-         *  */
-        console.log(devices)
         if (devices && devices.length) {
           setdevice(devices)
-          // var cameraId = devices[0].id;
-          
           setCamera(devices[0].id)
-          // .. use this to start scanning.
         }
       }).catch(err => {
-        // handle err
         console.log(err);
       });
     }, [])
@@ -65,11 +53,7 @@ const QRcode = () => {
     return (
       <>
       <div id={qrcodeRegionId}  />
-      {/* {
-       device && device.map(res => (
-          <li>{JSON.stringify(res)}</li>
-        )) 
-      } */}
+      {}
       </>
     )
   }

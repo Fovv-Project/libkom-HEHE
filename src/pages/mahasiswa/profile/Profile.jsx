@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import makeData from "./DataPeminjaman.jsx";
+// import makeData from "./DataAbsen.jsx";
 import { ProfileWrapper } from './Profile.style.js'
 import { photoProfile, barcodeIcon } from "../../../assets/images";
 

@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom';
 import { LoginWrapper } from './Login.style.js'
 import { logo, ilustrationAdminLogin } from "../../../assets/images";
 
-
 const LoginAdmin = () => {
   return (
     <LoginWrapper>
-      <div className="login-box">
+      <div className="container">
         <img alt="ilustrationAdminLogin" className="ilustrationAdminLogin" src={ilustrationAdminLogin} />
         <img alt="LogoLib" className="logo-lib" src={logo} />
-        
         <form>
           <label>
             Email
