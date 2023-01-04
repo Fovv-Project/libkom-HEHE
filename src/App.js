@@ -12,13 +12,11 @@ import LoginAdmin from "./pages/admin/login/Login";
 import Scanner from "./pages/mahasiswa/scanner/Scanner";
 import "./styles/baseStyles.js";
 import Buku from "./pages/admin/buku/Buku.jsx";
-import Sidebar from "./components/layouts/sidebar/Sidebar.jsx";
 
 const App = () => {
   return (
     <>
       <GlobalStyle />
-      {/* <Sidebar /> */}
 
       <Router>
         <Routes>

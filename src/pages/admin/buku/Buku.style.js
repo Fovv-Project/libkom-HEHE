@@ -1,15 +1,15 @@
 import styled from "styled-components";
-
+import Colors from "../../../styles/colors";
 const BukuWrapper = styled.div `
     width: fit-content;
     padding-top: 5rem;
     padding-left: 13rem;
+    background-color: ${Colors.Primary};
     
     .books {
         grid-template-columns: auto auto auto auto auto;
         grid-gap: 1rem;
         display: grid;
-        background-color: orange;
     }
     .search-wrapper {
         display: flex;
