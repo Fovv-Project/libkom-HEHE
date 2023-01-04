@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ProfileWrapper } from "./Profile.style.js";
+// import makeData from "./DataAbsen.jsx";
 import { photoProfile, barcodeIcon } from "../../../assets/images";
 
 const Profile = () => (
