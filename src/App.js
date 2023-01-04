@@ -12,7 +12,7 @@ import LoginAdmin from "./pages/admin/login/Login";
 import Scanner from "./pages/mahasiswa/scanner/Scanner";
 import "./styles/baseStyles.js";
 import Buku from "./pages/admin/buku/Buku.jsx";
-import AbsenList from './pages/admin/AbsenList';
+import AbsenList from "./pages/admin/AbsenList";
 
 
 const App = () => {
