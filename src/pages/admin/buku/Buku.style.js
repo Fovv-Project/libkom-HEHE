@@ -47,6 +47,6 @@ const BukuWrapper = styled.div `
     color: #999999;
     font-size: 1.5rem;
   }
-`
+`;
 
 export default BukuWrapper;

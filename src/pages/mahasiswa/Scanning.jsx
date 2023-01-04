@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
 const Scanning = () => {
-    return (
-        <div>
-            ini halaman untuk ngescan
-        </div>
-    );
-}
+  return <div>ini halaman untuk ngescan</div>;
+};
 
 export default Scanning;

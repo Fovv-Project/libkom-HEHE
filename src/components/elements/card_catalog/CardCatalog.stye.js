@@ -28,6 +28,6 @@ const CardWrapper = styled.section `
         width: 5rem;
         border-radius: 0.5rem;
     }
-`
+`;
 
 export default CardWrapper;
