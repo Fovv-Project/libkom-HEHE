@@ -12,6 +12,8 @@ import LoginAdmin from "./pages/admin/login/Login";
 import Scanner from "./pages/mahasiswa/scanner/Scanner";
 import "./styles/baseStyles.js";
 import Buku from "./pages/admin/buku/Buku.jsx";
+import AbsenList from './pages/admin/AbsenList';
+
 
 const App = () => {
   return (
@@ -30,6 +32,7 @@ const App = () => {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/absensi" element={<Absensi />} />
           <Route path='/buku' element={< Buku />} />
+          <Route path='/absenlist' element={<AbsenList />} />
         </Routes>
       </Router>
     </>

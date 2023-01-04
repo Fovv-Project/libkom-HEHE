@@ -1,6 +1,13 @@
 import React from "react";
+<<<<<<< HEAD
 import { Link } from "react-router-dom";
 import { ProfileWrapper } from "./Profile.style.js";
+=======
+import { Link } from 'react-router-dom';
+import makeData from "./DataPeminjaman.jsx";
+// import makeData from "./DataAbsen.jsx";
+import { ProfileWrapper } from './Profile.style.js'
+>>>>>>> loginAdmin
 import { photoProfile, barcodeIcon } from "../../../assets/images";
 
 const Profile = () => (
