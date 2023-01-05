@@ -1,11 +1,12 @@
-import { createContext, useContext, useEffect, useState } from 'react';
-import { useNavigate, Navigate } from 'react-router-dom';
-import { USER, SERVER_USER } from './const.js';
-import { auth, firebaseAuth } from '../firebase_service/authentication/auth.js';
-import { getUser } from '../services/userServices.js';
-import { useRole } from '../hooks/useRole.js';
-import Skeleton from 'react-loading-skeleton';
-import NotFoundError from '../exceptions/NotFoundError.js';
+import React from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import { useNavigate, Navigate } from "react-router-dom";
+import { USER, SERVER_USER } from "./const.js";
+import { auth, firebaseAuth } from "../firebase_service/authentication/auth.js";
+import { getUser } from "../services/userServices.js";
+import { useRole } from "../hooks/useRole.js";
+import Skeleton from "react-loading-skeleton";
+import NotFoundError from "../exceptions/NotFoundError.js";
 
 const UserContext = createContext({
   firebaseUser: auth.currentUser,
@@ -87,7 +88,7 @@ export const withAuthenticated = (Component) => (props) => {
   const { firebaseUser, localFirebaseUser } = useContext(UserContext);
   useEffect(() => {
     if (!firebaseUser && !localFirebaseUser) {
-      navigate('/');
+      navigate("/");
     }
   });
   return firebaseUser ? <Component {...props} /> : <Skeleton />;

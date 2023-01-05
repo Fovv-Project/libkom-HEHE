@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import Colors from "../../../styles/colors";
+import responsiveLayout from "../../../styles/constant";
 
-const HeaderWrap = styled.section `
+const HeaderWrap = styled.section`
     padding: 0.5rem 2rem;
     background-color: ${Colors.Primary} ;
     position: fixed;
@@ -17,13 +18,6 @@ const HeaderWrap = styled.section `
         border-radius: 25%;
         display: none;
     }
-
-    @media (max-width: 741px) {
-        .menu-btn Button{
-            cursor: pointer;
-            display: block;
-        }
-    }
-`
+`;
 
 export default HeaderWrap;

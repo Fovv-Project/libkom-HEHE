@@ -36,6 +36,6 @@ const SidebarWrapper = styled.div `
         color: ${Colors.Brown};
         margin-right: 0.5rem;
     }
-`
+`;
 
 export default SidebarWrapper;

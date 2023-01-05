@@ -1,15 +1,33 @@
-import React from 'react';
-import Header from '../../../components/layouts/header/Header';
-import Sidebar from '../../../components/layouts/sidebar/Sidebar';
-import ShowAbsen from './ShowAbsen';
-import AbsensiWrapper from './Absensi.style';
+import React from "react";
+import Table from "../../../components/layouts/table/Table";
+import makeData from "./DataAbsen";
+import TableStyles from "./AbsenList.style";
+function Absensi() {
+  const columns = [
+    {
+      Header: "Nama",
+      accessor: "nama",
+    },
+    {
+      Header: "NIM",
+      accessor: "nim",
+    },
+    {
+      Header: "Jurusan",
+      accessor: "jurusan",
+    },
+    {
+      Header: "Tanggal Hadir",
+      accessor: "tanggalHadir",
+    },
+  ];
 
-const Absensi = () => {
-    return (
-        <AbsensiWrapper>
-            <ShowAbsen />
-        </AbsensiWrapper>
-    );
+  const data = React.useMemo(() => makeData(100), []);
+  return (
+    <TableStyles>
+      <Table columns={columns} data={data} />
+    </TableStyles>
+  );
 }
 
 export default Absensi;

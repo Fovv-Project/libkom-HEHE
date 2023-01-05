@@ -3,10 +3,7 @@ import Colors from "../../../styles/colors";
 const CardWrapper = styled.section `
     background-color: ${Colors.Nude};
     padding: 1rem 2rem;
-    height: 16.25rem;
-    width: 12rem;
     text-align: center;
-    margin: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -28,6 +25,6 @@ const CardWrapper = styled.section `
         width: 5rem;
         border-radius: 0.5rem;
     }
-`
+`;
 
 export default CardWrapper;

@@ -4,7 +4,6 @@ const LogoWrap = styled.section `
     display: flex;
     align-items: center;
     margin-right: 4rem;
-    width: 100vh;
     img {
         height: 2rem;
         margin-right: 0.75rem;
